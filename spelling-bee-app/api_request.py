@@ -3,6 +3,10 @@ import re
 
 input = ['f','i','t','u','d','c','l']
 
+headers = {
+    'x-rapidapi-host': "wordsapiv1.p.rapidapi.com",
+    'x-rapidapi-key': "e6c04543b8mshb20abe55a63ac78p179ebbjsn371b9f80cb32"
+    }
 
 li = []
 

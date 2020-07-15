@@ -3,5 +3,5 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, Length
 
 class InputForm(FlaskForm):
-    letter = StringField('Letter', validators=[DataRequired(), Length(min=2, max=20)])
-    submit = SubmitField('Click Here')
+    letter = StringField('Letter', validators=[DataRequired(), Length(max=10, message=('Too many letters.'))])
+    submit = SubmitField('Submit')

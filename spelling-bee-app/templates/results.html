@@ -25,13 +25,16 @@
 
 				<div class="form-group">
 				<h2><strong> Success! </strong></h2>
+					{% for each in input_li %}
+					{{ each }}
+					{% endfor %}
 				</div>
 		</div>
 	</div>
 </div>
     <div class="border-top pt-3">
         <small class="text-muted">
-            Want to play again? <a class="ml-2" href="{{ url_for('home') }}">Click Here</a>
+            Want to play again? <a class="ml-2" href="{{ url_for('results') }}">Click Here</a>
         </small>
     </div>
 </body>
